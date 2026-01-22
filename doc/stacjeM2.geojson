@@ -1,0 +1,536 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-12-15T11:52:08Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390187815",
+        "colour": "#c60c30",
+        "name": "Dworzec Wileński",
+        "name:de": "Wilnaer Bahnhof",
+        "name:pl": "Dworzec Wileński",
+        "name:ru": "Железнодорожный вокзал Виленьски",
+        "name:uk": "Залізничний вокзал Віленьські",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "DW",
+        "ref": "C15",
+        "start_date": "2015-03-08",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q5318333",
+        "wikipedia": "pl:Dworzec Wileński (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0357972,
+          52.2537771
+        ]
+      },
+      "id": "node/3390187815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390197100",
+        "colour": "#c60c30",
+        "name": "Stadion Narodowy",
+        "name:pl": "Stadion Narodowy",
+        "name:ru": "Стадион Народовы",
+        "name:uk": "Стадіон Народови",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Sn",
+        "ref": "C14;E01",
+        "start_date": "2015-03-08",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "limited",
+        "wikidata": "Q7596321",
+        "wikipedia": "pl:Stadion Narodowy (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.042847,
+          52.2468346
+        ]
+      },
+      "id": "node/3390197100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390230685",
+        "colour": "#c60c30",
+        "name": "Centrum Nauki Kopernik",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Kk",
+        "ref": "C13",
+        "start_date": "2015-03-08",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q9183919",
+        "wikipedia": "pl:Centrum Nauki Kopernik (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0317878,
+          52.2399148
+        ]
+      },
+      "id": "node/3390230685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390237898",
+        "colour": "#c60c30",
+        "name": "Nowy Świat-Uniwersytet",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "NS",
+        "ref": "C12",
+        "start_date": "2015-03-08",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q9183918",
+        "wikipedia": "pl:Nowy Świat-Uniwersytet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0168168,
+          52.2368196
+        ]
+      },
+      "id": "node/3390237898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390266492",
+        "colour": "#c60c30",
+        "name": "Rondo ONZ",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "RO",
+        "ref": "C10",
+        "start_date": "2015-03-08",
+        "station": "subway",
+        "subway": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q7365568",
+        "wikipedia": "pl:Rondo ONZ (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9981024,
+          52.2330735
+        ]
+      },
+      "id": "node/3390266492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390267294",
+        "colour": "#c60c30",
+        "level": "-2",
+        "name": "Rondo Daszyńskiego",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Do",
+        "ref": "C9",
+        "start_date": "2015-03-08",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "limited",
+        "wikidata": "Q7365567",
+        "wikipedia": "pl:Rondo Daszyńskiego (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9828946,
+          52.2300827
+        ]
+      },
+      "id": "node/3390267294"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4930657482",
+        "colour": "#c60c30",
+        "name": "Płocka",
+        "name:pl": "Płocka",
+        "name:ru": "Плоцка",
+        "name:uk": "Плоцька",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Pa",
+        "ref": "C08",
+        "start_date": "2020-04-04",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "limited",
+        "wikidata": "Q28673348",
+        "wikipedia": "pl:Płocka (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9663847,
+          52.2324542
+        ]
+      },
+      "id": "node/4930657482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4930657487",
+        "colour": "#c60c30",
+        "name": "Trocka",
+        "name:pl": "Trocka",
+        "name:ru": "Троцка",
+        "name:uk": "Троцька",
+        "network": "Metro Warszawskie",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Ta",
+        "ref": "C18",
+        "start_date": "2019-09-15",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q24947001",
+        "wikipedia": "pl:Trocka (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0550586,
+          52.2751021
+        ]
+      },
+      "id": "node/4930657487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5117464830",
+        "name": "Świętokrzyska",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Sa",
+        "ref": "A14;C11",
+        "start_date": "2001-05-11",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638914",
+        "wikipedia": "pl:Świętokrzyska (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0078988,
+          52.2350954
+        ]
+      },
+      "id": "node/5117464830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5907821373",
+        "colour": "#c60c30",
+        "name": "Księcia Janusza",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "KJ",
+        "ref": "C06",
+        "start_date": "2020-04-04",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "limited",
+        "wikidata": "Q28674112",
+        "wikipedia": "pl:Księcia Janusza (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9443771,
+          52.2391822
+        ]
+      },
+      "id": "node/5907821373"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5907821374",
+        "colour": "#c60c30",
+        "name": "Młynów",
+        "name:pl": "Młynów",
+        "name:ru": "Млынув",
+        "name:uk": "Млинув",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Mw",
+        "ref": "C07",
+        "start_date": "2020-04-04",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "limited",
+        "wikidata": "Q28676558",
+        "wikipedia": "pl:Młynów (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9601048,
+          52.2376624
+        ]
+      },
+      "id": "node/5907821374"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6053348692",
+        "colour": "#c60c30",
+        "name": "Szwedzka",
+        "name:pl": "Szwedzka",
+        "name:ru": "Шведска",
+        "name:uk": "Шведська",
+        "network": "Metro Warszawskie",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Sz",
+        "ref": "C16",
+        "start_date": "2019-09-15",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q24947468",
+        "wikipedia": "pl:Szwedzka (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0455232,
+          52.2634709
+        ]
+      },
+      "id": "node/6053348692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6564265270",
+        "colour": "#c60c30",
+        "name": "Targówek Mieszkaniowy",
+        "network": "Metro Warszawskie",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Tk",
+        "ref": "C17",
+        "start_date": "2019-09-15",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q25415168",
+        "wikipedia": "pl:Targówek Mieszkaniowy (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0513658,
+          52.2692518
+        ]
+      },
+      "id": "node/6564265270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7362922676",
+        "colour": "#c60c30",
+        "name": "Bemowo",
+        "name:pl": "Bemowo",
+        "name:ru": "Бемово",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Bm",
+        "ref": "C4",
+        "start_date": "2022-06-30",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q89406786",
+        "wikipedia": "pl:Bemowo (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9154991,
+          52.2392071
+        ]
+      },
+      "id": "node/7362922676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7362922677",
+        "colour": "#c60c30",
+        "name": "Ulrychów",
+        "name:pl": "Ulrychów",
+        "name:ru": "Ульрыхув",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Uw",
+        "ref": "C05",
+        "start_date": "2022-06-30",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "limited",
+        "wikidata": "Q86723472",
+        "wikipedia": "pl:Ulrychów (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9298652,
+          52.2403314
+        ]
+      },
+      "id": "node/7362922677"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10058224345",
+        "colour": "#c60c30",
+        "name": "Bródno",
+        "network": "Metro Warszawskie",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Bo",
+        "ref": "C21",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q65169408",
+        "wikipedia": "pl:Bródno (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0289387,
+          52.293585
+        ]
+      },
+      "id": "node/10058224345"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10058224348",
+        "colour": "#c60c30",
+        "name": "Kondratowicza",
+        "network": "Metro Warszawskie",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Ka",
+        "ref": "C20",
+        "start_date": "2022-09-28",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q65169532",
+        "wikipedia": "pl:Kondratowicza (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0486889,
+          52.2920848
+        ]
+      },
+      "id": "node/10058224348"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10058224349",
+        "colour": "#c60c30",
+        "name": "Zacisze",
+        "name:pl": "Zacisze",
+        "network": "Metro Warszawskie",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Ze",
+        "ref": "C19",
+        "start_date": "2022-09-28",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q65169905",
+        "wikipedia": "pl:Zacisze (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.062148,
+          52.2837496
+        ]
+      },
+      "id": "node/10058224349"
+    }
+  ]
+}

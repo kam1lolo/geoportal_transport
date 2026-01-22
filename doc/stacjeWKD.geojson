@@ -1,0 +1,182 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-12-15T11:52:08Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1718180086",
+        "name": "Warszawa Śródmieście WKD",
+        "name:pl": "Warszawa Śródmieście WKD",
+        "name:ru": "Варшава Средместье (Варшавская пригородная железная дорога)",
+        "name:uk": "Варшава Середмістя (Варшавська приміська залізниця)",
+        "network": "Warszawska Kolej Dojazdowa;ZTM Warszawa",
+        "network:short": "WKD;WTP",
+        "operator": "Warszawska Kolej Dojazdowa",
+        "operator:short": "WKD",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "WŚr",
+        "train": "yes",
+        "wheelchair": "limited",
+        "wikidata": "Q2755236",
+        "wikipedia": "pl:Warszawa Śródmieście WKD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9993834,
+          52.2274779
+        ]
+      },
+      "id": "node/1718180086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390925140",
+        "name": "Warszawa Reduta Ordona",
+        "network": "Warszawska Kolej Dojazdowa;ZTM Warszawa",
+        "network:short": "WKD;WTP",
+        "operator": "Warszawska Kolej Dojazdowa",
+        "operator:short": "WKD",
+        "public_transport": "station",
+        "railway": "halt",
+        "train": "yes",
+        "wikidata": "Q2170451",
+        "wikipedia": "pl:Warszawa Reduta Ordona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9478636,
+          52.2143854
+        ]
+      },
+      "id": "node/3390925140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3472100889",
+        "internet_access": "no",
+        "name": "Warszawa Ochota WKD",
+        "network": "Warszawska Kolej Dojazdowa;ZTM Warszawa",
+        "network:short": "WKD;ZTM",
+        "operator": "Warszawska Kolej Dojazdowa",
+        "public_transport": "station",
+        "railway": "halt",
+        "train": "yes",
+        "wikidata": "Q941039",
+        "wikipedia": "pl:Warszawa Ochota (przystanek kolejowy)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9895212,
+          52.2254065
+        ]
+      },
+      "id": "node/3472100889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3472102372",
+        "name": "Warszawa Zachodnia WKD",
+        "network": "Warszawska Kolej Dojazdowa;ZTM Warszawa",
+        "network:short": "WKD;WTP",
+        "operator": "Warszawska Kolej Dojazdowa",
+        "operator:short": "WKD",
+        "public_transport": "station",
+        "railway": "halt",
+        "wikidata": "Q2328552",
+        "wikipedia": "pl:Warszawa Zachodnia WKD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9655716,
+          52.2194559
+        ]
+      },
+      "id": "node/3472102372"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3472122024",
+        "name": "Warszawa Raków",
+        "network": "Warszawska Kolej Dojazdowa;ZTM Warszawa",
+        "network:short": "WKD;WTP",
+        "operator": "Warszawska Kolej Dojazdowa",
+        "operator:short": "WKD",
+        "public_transport": "station",
+        "railway": "halt",
+        "ref": "4914",
+        "train": "yes",
+        "wikidata": "Q9371142",
+        "wikipedia": "pl:Warszawa Raków"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9358485,
+          52.1944814
+        ]
+      },
+      "id": "node/3472122024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3472126593",
+        "name": "Warszawa Salomea",
+        "network": "Warszawska Kolej Dojazdowa;ZTM Warszawa",
+        "network:short": "WKD;WTP",
+        "operator": "Warszawska Kolej Dojazdowa",
+        "operator:short": "WKD",
+        "public_transport": "station",
+        "railway": "halt",
+        "train": "yes",
+        "wikidata": "Q2711620",
+        "wikipedia": "pl:Warszawa Salomea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9243847,
+          52.1864599
+        ]
+      },
+      "id": "node/3472126593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8286392818",
+        "name": "Warszawa Aleje Jerozolimskie WKD",
+        "network": "Warszawska Kolej Dojazdowa;ZTM Warszawa",
+        "network:short": "WKD;WTP",
+        "operator": "Warszawska Kolej Dojazdowa",
+        "operator:short": "WKD",
+        "public_transport": "station",
+        "railway": "halt",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q2832591",
+        "wikipedia": "nl:Station Warszawa Aleje Jerozolimskie WKD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9422822,
+          52.2053112
+        ]
+      },
+      "id": "node/8286392818"
+    }
+  ]
+}

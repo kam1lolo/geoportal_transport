@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport kolejowy w Warszawie</title>
+    <link rel="icon" type="image/icon" href="doc/geo_train.ico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.1/leaflet.reachability.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-mouse-position@1.1.0/src/L.Control.MousePosition.css">
+
+    <style>
+        html,
+        body,
+        #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.1/leaflet.reachability.min.js"></script>
+    <script src="https://unpkg.com/leaflet-mouse-position@1.1.0/src/L.Control.MousePosition.js"></script>
+
+    <script>
+        // Inicjalizacja mapy oraz warstwy podkładowe
+        var mymap = L.map('map', { maxZoom: 19 }).setView([52.23, 21.05], 11)
+
+        var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+            { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' })
+        osm.addTo(mymap)
+
+        var ortofoto = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Esri World Imagery',
+            transparent: false
+        });
+
+        L.control.mousePosition({
+            position: 'bottomright',
+            separator: ' | ',
+            lngFirst: false,
+            numDigits: 5,
+            prefix: "Wsp: "
+        }).addTo(mymap);
+
+        mymap.attributionControl.setPrefix(
+            '<a href="http://leafletjs.com">Leaflet</a> | Transport kolejowy w Warszawie',
+        );
+
+        L.control.reachability({
+            apiKey: 'eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImMyOGY1ZGMwZWQ2ZjRmYjJhZmZmYThhNTYzOTUxMWFkIiwiaCI6Im11cm11cjY0In0=',
+
+            // Ustawienia
+            drawButtonContent: '',
+            drawButtonStyleClass: 'reachability-control-draw-button fa fa-pencil',
+            deleteButtonContent: '',
+            deleteButtonStyleClass: 'reachability-control-delete-button fa fa-trash',
+            distanceButtonContent: '',
+            distanceButtonStyleClass: 'reachability-control-distance-button fa fa-road',
+            timeButtonContent: '',
+            timeButtonStyleClass: 'reachability-control-time-button fa fa-clock-o',
+            travelModeButton1Content: '',
+            travelModeButton1StyleClass: 'fa fa-car',
+            travelModeButton2Content: '',
+            travelModeButton2StyleClass: 'fa fa-bicycle',
+            travelModeButton3Content: '',
+            travelModeButton3StyleClass: 'fa fa-male',
+            travelModeButton4Content: '',
+            travelModeButton4StyleClass: 'fa fa-wheelchair-alt',
+            
+            position: 'topleft',
+
+            // Style izochronów
+            styleFn: function (feature) {
+                var rangeColors = ['#006837', '#39B54A', '#8CC63F', '#F7931E', '#F15A24', '#C1272D'];
+                var range = feature.properties.Range;
+                var color = rangeColors[range] || '#C1272D';
+
+                return {
+                    color: color,
+                    weight: 2,
+                    opacity: 0.7,
+                    fillOpacity: 0.3
+                };
+            }
+        }).addTo(mymap);
+
+
+        var KolejLayer = L.layerGroup();
+        var MetroM1Layer = L.layerGroup();
+        var MetroM2Layer = L.layerGroup();
+        var LiniaWKDLayer = L.layerGroup();
+        var WarszawaLayer = L.layerGroup();
+
+        KolejLayer.addTo(mymap);
+        MetroM1Layer.addTo(mymap);
+        MetroM2Layer.addTo(mymap);
+        LiniaWKDLayer.addTo(mymap);
+        WarszawaLayer.addTo(mymap);
+
+        // DANE:
+        let selectedLine = null;
+        // Linie kolejowe:
+        fetch('doc/liniekolejowe.geojson').then(response => response.json()).then(data => {
+            L.geoJSON(data, {
+                style: function (feature) {
+                    return {
+                        color: '#00cc44',
+                        weight: 4,
+                        opacity: 0.8
+                    };
+                },
+                onEachFeature: function (feature, layer) {
+                    var props = feature.properties;
+                    var nazwa = 'Linia kolejowa';
+
+                    layer.bindPopup(
+                        '<h3>' + nazwa + '</h3>' +
+                        '<b>Linie:</b> ' + (props['linie']) + '<br>' +
+                        '<b>Operator:</b> ' + (props['operator:short'])
+                    );
+                    layer.bindTooltip(nazwa, { permanent: false, direction: 'top' });
+
+                    layer.on('click', function () {
+                        if (selectedLine) {
+                            selectedLine.setStyle({
+                                color: '#00cc44',
+                                weight: 5,
+                                opacity: 0.8
+                            });
+                        }
+                        this.setStyle({
+                            color: '#fa2302',
+                            weight: 6
+                        });
+                        selectedLine = this;
+                        this.openPopup();
+                        L.DomEvent.stopPropagation(e);
+                    });
+                },
+            })
+                .addTo(KolejLayer);
+        })
+            .catch(error => console.error('Błąd ładowania: ', error));
+
+        // Stacje kolejowe:
+        fetch('doc/stacjekolejowe.geojson').then(response => response.json()).then(data => {
+            L.geoJSON(data, {
+                pointToLayer: function (feature, latlng) {
+                    return L.circleMarker(latlng, {
+                        radius: 7,
+                        fillColor: '#00cc44',
+                        color: '#000',
+                        weight: 2,
+                        fillOpacity: 0.9
+                    });
+                },
+                onEachFeature: function (feature, layer) {
+                    var props = feature.properties;
+                    var nazwa = props.name || props.nazwa || 'Brak nazwy';
+                    var linie = props.linie || 'Brak danych';
+                    var operator = props['operator:short'] || 'PKP'
+
+                    layer.bindPopup(
+                        '<h3>' + nazwa + '</h3>' +
+                        '<b>Linie:</b> ' + linie + '<br>' +
+                        '<b>Operator:</b> ' + operator
+                    );
+                    layer.bindTooltip(nazwa, { permanent: false, direction: 'top' });
+                }
+            })
+                .addTo(KolejLayer);
+        })
+            .catch(error => {
+                console.error('Błąd wczytywania danych:', error);
+            });
+
+        // Linia M1:
+        fetch('doc/liniaM1.geojson').then(response => response.json()).then(data => {
+            L.geoJSON(data, {
+                style: function (feature) {
+                    return {
+                        color: '#0664ab',
+                        weight: 4,
+                        opacity: 0.8
+                    };
+                },
+                onEachFeature: function (feature, layer) {
+                    layer.bindPopup('<b>Linia: ' + 'M1' + '</b>');
+                },
+            })
+                .addTo(MetroM1Layer);
+        })
+            .catch(error => console.error('Błąd ładowania: ', error));
+
+        // Stacje M1:
+        fetch('doc/stacjeM1.geojson').then(response => response.json()).then(data => {
+            L.geoJSON(data, {
+                pointToLayer: function (feature, latlng) {
+                    return L.circleMarker(latlng, {
+                        radius: 7,
+                        fillColor: '#0664ab',
+                        color: '#000',
+                        weight: 2,
+                        fillOpacity: 0.9
+                    });
+                },
+                onEachFeature: function (feature, layer) {
+                    var props = feature.properties;
+                    var nazwa = props.name || props.nazwa || 'Brak nazwy';
+                    var linie = 'M1';
+
+                    layer.bindPopup(
+                        '<h3>' + nazwa + '</h3>' +
+                        '<b>Linie:</b> ' + linie + '<br>' +
+                        '<b>Operator:</b> ' + (props['operator:short'] || 'Metro Warszawskie')
+                    );
+                    layer.bindTooltip(nazwa, { permanent: false, direction: 'top' });
+                }
+            })
+                .addTo(MetroM1Layer);
+        })
+            .catch(error => {
+                console.error('Błąd wczytywania danych:', error);
+            });
+
+        // Linia M2:
+        fetch('doc/liniaM2.geojson').then(response => response.json()).then(data => {
+            L.geoJSON(data, {
+                style: function (feature) {
+                    return {
+                        color: '#c8102c',
+                        weight: 4,
+                        opacity: 0.8
+                    };
+                },
+                onEachFeature: function (feature, layer) {
+                    layer.bindPopup('<b>Linia: ' + 'M2' + '</b>');
+                },
+            })
+                .addTo(MetroM2Layer);
+        })
+            .catch(error => console.error('Błąd ładowania: ', error));
+
+        // Stacje M2:
+        fetch('doc/stacjeM2.geojson').then(response => response.json()).then(data => {
+            L.geoJSON(data, {
+                pointToLayer: function (feature, latlng) {
+                    return L.circleMarker(latlng, {
+                        radius: 7,
+                        fillColor: '#c8102c',
+                        color: '#000',
+                        weight: 2,
+                        fillOpacity: 0.9
+                    });
+                },
+                onEachFeature: function (feature, layer) {
+                    var props = feature.properties;
+                    var nazwa = props.name || props.nazwa || 'Brak nazwy';
+                    var linie = 'M2';
+
+                    layer.bindPopup(
+                        '<h3>' + nazwa + '</h3>' +
+                        '<b>Linie:</b> ' + linie + '<br>' +
+                        '<b>Operator:</b> ' + (props['operator:short'] || 'Metro Warszawskie')
+                    );
+                    layer.bindTooltip(nazwa, { permanent: false, direction: 'top' });
+                }
+            })
+                .addTo(MetroM2Layer);
+        })
+            .catch(error => {
+                console.error('Błąd wczytywania danych:', error);
+            });
+
+        // Linia WKD:
+        fetch('doc/liniaWKD.geojson').then(response => response.json()).then(data => {
+            L.geoJSON(data, {
+                style: function (feature) {
+                    return {
+                        color: '#5005ab',
+                        weight: 4,
+                        opacity: 0.8
+                    };
+                },
+                onEachFeature: function (feature, layer) {
+                    layer.bindPopup('<b>Linia: ' + 'WKD' + '</b>');
+                },
+            })
+                .addTo(LiniaWKDLayer);
+        })
+            .catch(error => console.error('Błąd ładowania: ', error));
+
+        // Stacje WKD
+        fetch('doc/stacjeWKD.geojson').then(response => response.json()).then(data => {
+            L.geoJSON(data, {
+                pointToLayer: function (feature, latlng) {
+                    return L.circleMarker(latlng, {
+                        radius: 7,
+                        fillColor: '#5005ab',
+                        color: '#000',
+                        weight: 2,
+                        fillOpacity: 0.9
+                    });
+                },
+                onEachFeature: function (feature, layer) {
+                    var props = feature.properties;
+                    var nazwa = props.name || props.nazwa || 'Brak nazwy';
+                    var linie = props['network:short'] || props.network || 'Brak danych';
+
+                    layer.bindPopup(
+                        '<h3>' + nazwa + '</h3>' +
+                        '<b>Linie:</b> ' + linie + '<br>' +
+                        '<b>Operator:</b> ' + (props['operator:short'] || 'WKD')
+                    );
+                    layer.bindTooltip(nazwa, { permanent: false, direction: 'top' });
+                }
+            })
+                .addTo(LiniaWKDLayer);
+        })
+            .catch(error => {
+                console.error('Błąd wczytywania danych:', error);
+            });
+
+        // Granice Warszawy:
+        fetch('doc/Warszawa.geojson').then(response => response.json()).then(data => {
+            L.geoJSON(data, {
+                style: function (feature) {
+                    return {
+                        color: 'black',
+                        weight: 3,
+                        opacity: 0.8
+                    };
+                },
+            })
+                .addTo(WarszawaLayer);
+        })
+            .catch(error => console.error('Błąd ładowania: ', error));
+
+        var baseLayers = {
+            "OpenStreetMap": osm,
+            "Ortofotomapa": ortofoto
+        };
+
+        var overlays = {
+            "Linie kolejowe": KolejLayer,
+            "Linia M1": MetroM1Layer,
+            "Linia M2": MetroM2Layer,
+            "Linia WKD": LiniaWKDLayer,
+            "Granice Warszawy": WarszawaLayer
+        };
+
+        L.control.layers(baseLayers, overlays).addTo(mymap);
+        L.control.scale({ imperial: false, metric: true }).addTo(mymap);
+
+        mymap.on('click', function (e) {
+            console.log('Kliknięto w mapę');
+            console.log('selectedLine:', selectedLine);
+
+            if (selectedLine) {
+                console.log('Resetuję linię');
+                selectedLine.setStyle({
+                    color: '#00cc44',
+                    weight: 4,
+                    opacity: 0.8
+                });
+                selectedLine = null;
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

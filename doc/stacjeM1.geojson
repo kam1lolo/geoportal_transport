@@ -1,0 +1,601 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-12-15T11:50:04Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/35121250",
+        "colour": "blue",
+        "level": "-2",
+        "name": "Ratusz-Arsenał",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Rz",
+        "start_date": "2001-05-11",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638595",
+        "wikipedia": "pl:Ratusz Arsenał"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0008823,
+          52.2452163
+        ]
+      },
+      "id": "node/35121250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/291414851",
+        "colour": "blue",
+        "name": "Marymont",
+        "name:pl": "Marymont",
+        "name:ru": "Марымонт",
+        "name:uk": "Маримонт",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Mt",
+        "ref": "A19",
+        "start_date": "2006-12-29",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638585",
+        "wikipedia": "pl:Marymont (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9719399,
+          52.2715768
+        ]
+      },
+      "id": "node/291414851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/307389114",
+        "colour": "blue",
+        "name": "Stare Bielany",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "SB",
+        "ref": "A21",
+        "start_date": "2008-10-25",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638981",
+        "wikipedia": "pl:Stare Bielany (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9493511,
+          52.2818277
+        ]
+      },
+      "id": "node/307389114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/307389115",
+        "colour": "blue",
+        "name": "Wawrzyszew",
+        "name:pl": "Wawrzyszew",
+        "name:ru": "Вавжишев",
+        "name:uk": "Вавжишев",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Ww",
+        "ref": "A22",
+        "start_date": "2008-10-25",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638591",
+        "wikipedia": "pl:Wawrzyszew (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.939515,
+          52.2863474
+        ]
+      },
+      "id": "node/307389115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/307389116",
+        "colour": "blue",
+        "name": "Młociny",
+        "name:pl": "Młociny",
+        "name:ru": "Млоцины",
+        "name:uk": "Млоціни",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "My",
+        "ref": "A23",
+        "start_date": "2008-10-25",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638928",
+        "wikipedia": "pl:Młociny (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9298678,
+          52.2907703
+        ]
+      },
+      "id": "node/307389116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1958108834",
+        "colour": "blue",
+        "name": "Słodowiec",
+        "name:pl": "Słodowiec",
+        "name:ru": "Слодовец",
+        "name:uk": "Слодовець",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "platforms": "1",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Sc",
+        "ref": "A20",
+        "start_date": "2008-04-23",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638940",
+        "wikipedia": "pl:Słodowiec (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9601259,
+          52.2768261
+        ]
+      },
+      "id": "node/1958108834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390283399",
+        "colour": "#2259a4",
+        "name": "Kabaty",
+        "name:pl": "Kabaty",
+        "name:ru": "Кабаты",
+        "name:uk": "Кабати",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Ky",
+        "ref": "A1",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q639716",
+        "wikipedia": "pl:Kabaty (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0650711,
+          52.1320765
+        ]
+      },
+      "id": "node/3390283399"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390289961",
+        "colour": "blue",
+        "name": "Stokłosy",
+        "name:pl": "Stokłosy",
+        "name:ru": "Стоклосы",
+        "name:uk": "Стоклоси",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Sy",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638966",
+        "wikipedia": "pl:Stokłosy (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0347233,
+          52.1560759
+        ]
+      },
+      "id": "node/3390289961"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390290324",
+        "colour": "blue",
+        "name": "Natolin",
+        "name:pl": "Natolin",
+        "name:ru": "Натолин",
+        "name:uk": "Натолін",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "N",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q639010",
+        "wikipedia": "pl:Natolin (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0564351,
+          52.1411007
+        ]
+      },
+      "id": "node/3390290324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390290598",
+        "colour": "blue",
+        "name": "Imielin",
+        "name:pl": "Imielin",
+        "name:ru": "Имелин",
+        "name:uk": "Імєлін",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "I",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638954",
+        "wikipedia": "pl:Imielin (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0461062,
+          52.1493
+        ]
+      },
+      "id": "node/3390290598"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390304927",
+        "colour": "blue",
+        "name": "Ursynów",
+        "name:pl": "Ursynów",
+        "name:ru": "Урсынув",
+        "name:uk": "Урсинув",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "U",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638921",
+        "wikipedia": "pl:Ursynów (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0276283,
+          52.1620456
+        ]
+      },
+      "id": "node/3390304927"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390306374",
+        "colour": "blue",
+        "name": "Służew",
+        "name:pl": "Służew",
+        "name:ru": "Служев",
+        "name:uk": "Служев",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Sw",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q2499517",
+        "wikipedia": "pl:Służew (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0262866,
+          52.1727624
+        ]
+      },
+      "id": "node/3390306374"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390327068",
+        "name": "Racławicka",
+        "name:pl": "Racławicka",
+        "name:ru": "Рацлавицка",
+        "name:uk": "Рацлавіцька",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Ra",
+        "ref": "A9",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q639038",
+        "wikipedia": "pl:Racławicka (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0122349,
+          52.1988637
+        ]
+      },
+      "id": "node/3390327068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390333313",
+        "name": "Wierzbno",
+        "name:pl": "Wierzbno",
+        "name:ru": "Вежбно",
+        "name:uk": "Вєжбно",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Wo",
+        "ref": "A8",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q568129",
+        "wikipedia": "pl:Wierzbno (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0167966,
+          52.1898719
+        ]
+      },
+      "id": "node/3390333313"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390336021",
+        "colour": "blue",
+        "name": "Wilanowska",
+        "name:pl": "Wilanowska",
+        "name:ru": "Виляновска",
+        "name:uk": "Віляновська",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Wa",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q2662377",
+        "wikipedia": "pl:Wilanowska (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0231452,
+          52.1818168
+        ]
+      },
+      "id": "node/3390336021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390342469",
+        "colour": "blue",
+        "name": "Pole Mokotowskie",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "PM",
+        "ref": "A10",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "no",
+        "wikidata": "Q638899",
+        "wikipedia": "pl:Pole Mokotowskie (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0079298,
+          52.2087775
+        ]
+      },
+      "id": "node/3390342469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390361095",
+        "colour": "blue",
+        "name": "Politechnika",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Pa",
+        "ref": "A11",
+        "start_date": "1995-04-07",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q639024",
+        "wikipedia": "pl:Politechnika (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0153031,
+          52.2186581
+        ]
+      },
+      "id": "node/3390361095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3390365405",
+        "colour": "blue",
+        "name": "Centrum",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "C",
+        "start_date": "1998-05-26",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q638910",
+        "wikipedia": "pl:Centrum (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.010186,
+          52.2310069
+        ]
+      },
+      "id": "node/3390365405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3416840991",
+        "colour": "blue",
+        "level": "-2",
+        "name": "Dworzec Gdański",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "DG",
+        "ref": "A17",
+        "start_date": "2003-12-20",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q2662347",
+        "wikipedia": "pl:Dworzec Gdański (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9941857,
+          52.2580586
+        ]
+      },
+      "id": "node/3416840991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3615569910",
+        "atm": "yes",
+        "colour": "blue",
+        "name": "Plac Wilsona",
+        "network": "Warsaw Metro",
+        "operator": "Metro Warszawskie",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "PW",
+        "ref": "A18",
+        "start_date": "2006-12-29",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q639707",
+        "wikipedia": "pl:Plac Wilsona (stacja metra)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9844973,
+          52.2692619
+        ]
+      },
+      "id": "node/3615569910"
+    }
+  ]
+}
